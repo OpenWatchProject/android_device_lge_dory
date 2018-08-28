@@ -55,3 +55,6 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 # SELinux policies
 # qcom sepolicy
 include device/qcom/sepolicy/sepolicy.mk
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
