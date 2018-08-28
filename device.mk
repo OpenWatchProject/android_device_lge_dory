@@ -92,6 +92,13 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+# Misc dependency packages
+PRODUCT_PACKAGES += \
+    libxml2 \
+    libcurl \
+    libboringssl-compat \
+    librmnetctl
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
