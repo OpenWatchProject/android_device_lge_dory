@@ -31,7 +31,9 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.dory
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.dory:root/fstab.dory
+    $(LOCAL_PATH)/rootdir/fstab.dory:root/fstab.dory \
+	$(LOCAL_PATH)/rootdir/init.dory.rc:root/init.dory.rc \
+	$(LOCAL_PATH)/rootdir/ueventd.dory.rc:root/ueventd.dory.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
