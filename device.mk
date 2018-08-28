@@ -60,6 +60,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8226
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    memtrack.msm8226
+
+# Hwcomposer
+PRODUCT_PACKAGES += \
+    hwcomposer.msm8226
+
+# Gralloc
+PRODUCT_PACKAGES += \
+    gralloc.msm8226
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
