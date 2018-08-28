@@ -56,6 +56,9 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 # qcom sepolicy
 include device/qcom/sepolicy/sepolicy.mk
 
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
