@@ -119,16 +119,9 @@ service batteryd /system/bin/batteryd
     user system
     group system
 
-# bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B \
-        -o /data/data/com.android.shell/files/bugreports/bugreport
-    class main
-    disabled
-    oneshot
-    keycodes 114 115 116
-
-service clockwork_proxy /system/bin/ClockworkProxy
-    class main
+# Disabled due to it tying into Android Wear frameworks
+#service clockwork_proxy /system/bin/ClockworkProxy
+#    class main
 
 service mpdecision /system/bin/mpdecision --avg_comp
    class main
