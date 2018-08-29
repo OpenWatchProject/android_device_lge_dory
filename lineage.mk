@@ -17,6 +17,9 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_mini.mk)
 
+# Tiny aosp configuartion
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_tiny.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/lge/dory/device.mk)
 
