@@ -36,7 +36,7 @@ BOARD_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 BOARD_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel image
-BOARD_KERNEL_SEPARATED_DT := true
+TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_SOURCE := kernel/lge/dory
 TARGET_KERNEL_CONFIG := dory_defconfig
 BOARD_KERNEL_CMDLINE := androidboot.hardware=dory user_debug=31 maxcpus=4 msm_rtb.filter=0x3F console=null androidboot.console=null
