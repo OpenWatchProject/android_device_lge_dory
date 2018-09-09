@@ -26,14 +26,11 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 TARGET_SCREEN_HEIGHT := 280
 TARGET_SCREEN_WIDTH := 280
 
-# Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.dory
-
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.dory:root/fstab.dory \
-	$(LOCAL_PATH)/rootdir/init.dory.rc:root/init.dory.rc \
-	$(LOCAL_PATH)/rootdir/ueventd.dory.rc:root/ueventd.dory.rc
+PRODUCT_PACKAGES += \
+    fstab.dory \
+    init.dory.rc \
+    ueventd.dory.rc
 
 # Audio
 PRODUCT_COPY_FILES += \

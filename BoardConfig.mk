@@ -52,6 +52,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.dory
+
 # SELinux policies
 # qcom sepolicy
 include device/qcom/sepolicy/sepolicy.mk
